@@ -2703,17 +2703,17 @@ function onYouTubeIframeAPIReady() {
     player = new YT.Player('youtubePlayer', {
         height: '0',
         width: '0',
-        videoId: 'Uqxa56VsL1M',  // ID video đầu tiên
+        videoId: 'lQEQPGQIJH4',
         playerVars: {
-            'listType': 'playlist',
-            'list': 'RDUqxa56VsL1M', // ID playlist radio
             'autoplay': 0,
             'controls': 0,
             'disablekb': 1,
             'fs': 0,
             'modestbranding': 1,
             'playsinline': 1,
-            'rel': 0
+            'rel': 0,
+            'loop': 1,           // lặp lại bài này mãi
+            'playlist': 'lQEQPGQIJH4'  // cần cho loop hoạt động
         },
         events: {
             'onReady': onPlayerReady,
